@@ -1,0 +1,70 @@
+{
+  "version": "0.0.0",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "source": "./admin/src/index.js",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "source": "./server/src/index.js",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0-rc.17",
+    "@strapi/icons": "^2.0.0-rc.17",
+    "react-date-range": "^2.0.1",
+    "react-intl": "^7.1.6"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.10.3",
+    "prettier": "^3.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.29.0",
+    "styled-components": "^6.1.15"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.10.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.29.0",
+    "styled-components": "^6.1.15"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "date-range-picker-5",
+    "displayName": "Strapi Date Range Picker 5",
+    "description": "This date-range-picker plugin allows you to select a data range in one CustomField instead of adding two seperate date field."
+  },
+  "name": "date-range-picker-5",
+  "description": "This date-range-picker plugin allows you to select a data range in one CustomField instead of adding two seperate date field.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/muammerkeles/strapi-date-range-picker-plugin-5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muammerkeles/strapi-date-range-picker-plugin-5/issues"
+  },
+  "homepage": "https://github.com/muammerkeles/strapi-date-range-picker-plugin-5#readme",
+  "author": "Muammer Keles <wwebmaster.kls@gmail.com>"
+}
