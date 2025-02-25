@@ -1,27 +1,10 @@
 # date-range-picker-5
 
 This date-range-picker plugin allows you to select a data range in one CustomField instead of adding two seperate date field.
-
-
-
-**A newer version compatible with Strapi V5 is available at the link below: **
-
-     👇👇👇👇👇👇👇
-
-✅ 🚀 [Strapi Date Range Picker 5](https://github.com/muammerkeles/strapi-date-range-picker-5) 🚀
-
  
-       👆👆👆👆👆👆👆
-
--- 
-
-❌❌❌❌
-# 📦 This repository is going to be archived !!.
-### Strapi plugin - date-range-picker  BETA
-
 Strapi Custom Field for Date Range 
 
-[GitHub](https://github.com/muammerkeles/strapi-date-range-picker-plugin) - [npm](https://www.npmjs.com/package/strapi-date-range-picker-plugin)
+[GitHub](https://github.com/muammerkeles/strapi-date-range-picker-5) - [npm](https://www.npmjs.com/package/strapi-date-range-picker-5)
 
 How to use?
 
