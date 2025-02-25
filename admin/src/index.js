@@ -32,7 +32,7 @@ export default {
       }
     })
 
-    app.addMenuLink({
+    /*app.addMenuLink({
       to: `plugins/${PluginIcon}`,
       icon: PluginIcon,
       intlLabel: {
@@ -45,7 +45,7 @@ export default {
         return App;
       },
     });
-
+*/
     app.registerPlugin({
       id: PLUGIN_ID,
       initializer: Initializer,
