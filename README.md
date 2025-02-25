@@ -34,4 +34,4 @@ It's ready.
 This date-range-picker-5 plugin allows you to select a data range in one CustomField instead of adding two seperate field. 
 
 Watch the video:
- ![example](my-date-range5-1.gif)
+ ![example](my-date-range5.gif)
