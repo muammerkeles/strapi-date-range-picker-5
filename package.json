@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "keywords": [],
   "type": "commonjs",
   "exports": {
@@ -52,20 +52,21 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "date-range-picker-5",
+    "name": "strapi-date-range-picker-5",
     "displayName": "Strapi Date Range Picker 5",
     "description": "This date-range-picker plugin allows you to select a data range in one CustomField instead of adding two seperate date field."
   },
-  "name": "date-range-picker-5",
+  "name": "strapi-date-range-picker-5",
   "description": "This date-range-picker plugin allows you to select a data range in one CustomField instead of adding two seperate date field.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/muammerkeles/strapi-date-range-picker-plugin-5.git"
+    "url": "git+ssh://git@github.com/muammerkeles/strapi-date-range-picker-5.git"
   },
   "bugs": {
-    "url": "https://github.com/muammerkeles/strapi-date-range-picker-plugin-5/issues"
+    "url": "https://github.com/muammerkeles/strapi-date-range-picker-5/issues"
   },
-  "homepage": "https://github.com/muammerkeles/strapi-date-range-picker-plugin-5#readme",
-  "author": "Muammer Keles <wwebmaster.kls@gmail.com>"
+  "homepage": "https://github.com/muammerkeles/strapi-date-range-picker-5#readme",
+  "author": "Muammer Keles <wwebmaster.kls@gmail.com>",
+  "main": "index.js"
 }
