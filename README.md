@@ -23,7 +23,7 @@ then add this code inside **plugins.js**
 ```
 module.exports = () => ({
     // ..
-    'date-range-picker-5': {
+    'strapi-date-range-picker-5': {
         enabled: true,
       },
     //..
