@@ -2,7 +2,6 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
 import { DateRange, DateRangePicker, Calendar, DefinedRange } from 'react-date-range';
-import { addDays } from 'date-fns';
 import { useIntl } from "react-intl";
 
 import React, { useState, useEffect, forwardRef } from 'react';
