@@ -42,9 +42,18 @@ const DateRangePicker5 = forwardRef((props, forwardedRef) => {
     ]);
 
     const [selectedDates, setSelectedDates] = useState({
-        startDate: state[0].startDate,
-        endDate: state[0].endDate,
+        startDate: state[0].startDate
+            ? new Date(state[0].startDate.getTime() - state[0].startDate.getTimezoneOffset() * 60000)
+                  .toISOString()
+                  .split('T')[0]
+            : null,
+        endDate: state[0].endDate
+            ? new Date(state[0].endDate.getTime() - state[0].endDate.getTimezoneOffset() * 60000)
+                  .toISOString()
+                  .split('T')[0]
+            : null,
     });
+    
 
     const [selectionStep, setSelectionStep] = useState(0); // 👣 Seçim adımlarını takip et
 
@@ -53,8 +62,16 @@ const DateRangePicker5 = forwardRef((props, forwardedRef) => {
         setState([item.selection]);
         const { startDate, endDate } = item.selection;
         setSelectedDates({
-            startDate: startDate ? startDate.toISOString().split('T')[0] : null,
-            endDate: endDate ? endDate.toISOString().split('T')[0] : null,
+            startDate: startDate
+            ? new Date(startDate.getTime() - startDate.getTimezoneOffset() * 60000)
+                  .toISOString()
+                  .split('T')[0]
+            : null,
+        endDate: endDate
+            ? new Date(endDate.getTime() - endDate.getTimezoneOffset() * 60000)
+                  .toISOString()
+                  .split('T')[0]
+            : null,
         });
         if (onChange) {
             //onChange({ startDate, endDate }); // value değiştiğinde parent'a da bildir
@@ -72,7 +89,9 @@ const DateRangePicker5 = forwardRef((props, forwardedRef) => {
     };
 
     useEffect(() => {
-        if (value) {
+          onChange({ target: { name, value: selectedDates } }) ;
+
+        /*if (value) {
             setState([
                 {
                     startDate: value.startDate ? new Date(value.startDate) : new Date(),
@@ -80,8 +99,8 @@ const DateRangePicker5 = forwardRef((props, forwardedRef) => {
                     key: 'selection',
                 },
             ]);
-        }
-    }, [value]); // Gelen value değiştikçe state'i güncelle
+        }*/
+    }, [selectedDates]); // Gelen value değiştikçe state'i güncelle
 
     const { formatMessage } = useIntl();
     const field = useField(name);
