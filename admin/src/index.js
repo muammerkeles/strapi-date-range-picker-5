@@ -4,33 +4,32 @@ import pluginPkg from '../../package.json';
 
 import { Initializer } from './components/Initializer';
 import { PluginIcon } from './components/PluginIcon';
-const name = pluginPkg.strapi.name;
+const date_range_component = "date-range-picker";
 
 export default {
   register(app) {
 
     app.customFields.register({
-      name,
+      name:`${date_range_component}`,
       icon: PluginIcon,
-
-//      name:"date-range-picker",
-      /*plugin: name,// "strapi-custom-date-range-picker-field",
-      */
-      id: PLUGIN_ID,
-
-      //pluginId: pluginId,
+      pluginId: PLUGIN_ID,
       type: "json",
       intlLabel: {
-        id: `${PLUGIN_ID}.${name}.label`,
+        id: `${PLUGIN_ID}.${date_range_component}.label`,
         defaultMessage: "Date Range Picker",
       },
       intlDescription: {
-        id:  `${PLUGIN_ID}.${name}.description`,
+        id:  `${PLUGIN_ID}.${date_range_component}.description`,
         defaultMessage: "Date Range Picker to add custom field",
       },
       components: {
         Input: async () => import('./components/DateRange'),
       },
+      options: {
+        //default: 'Preview', // Nok
+        baseName: 'Preview Button', // Nok
+        base: []
+      }
     })
 
     app.addMenuLink({
