@@ -25,7 +25,7 @@ module.exports = () => ({
     // ..
     'date-range-picker-5': {
         enabled: true,
-        resolve: './src/plugins/date-range-picker-5'
+        //resolve: './src/plugins/date-range-picker-5'
       },
     //..
 });
