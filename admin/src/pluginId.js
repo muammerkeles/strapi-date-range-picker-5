@@ -1,1 +1,1 @@
-export const PLUGIN_ID = 'date-range-picker-5';
+export const PLUGIN_ID = 'strapi-date-range-picker-5';

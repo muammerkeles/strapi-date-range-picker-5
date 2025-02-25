@@ -3,7 +3,8 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 
 import { DateRange, DateRangePicker, Calendar, DefinedRange } from 'react-date-range';
 import { useIntl } from "react-intl";
-
+import { addDays } from "date-fns";
+import { enGB } from "date-fns/locale"; // Doğru locale içe aktarıldı mı?
 import React, { useState, useEffect, forwardRef } from 'react';
 import {
     Typography,
@@ -132,6 +133,7 @@ const DateRangePicker5 = forwardRef((props, forwardedRef) => {
                             ranges={state}
                             direction='horizontal'
                             months={2}
+                            locale={enGB}
                         />
                     </div>
                 )}
