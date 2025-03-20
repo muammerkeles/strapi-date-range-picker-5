@@ -8,8 +8,16 @@ Strapi Custom Field for Date Range
 
 
 Watch the video:
+
  ![example](my-date-range6.gif)
- 
+
+
+ ![image](https://github.com/user-attachments/assets/d7927f73-9ff9-42d4-9374-ba0646b4cdff)
+
+
+
+--
+
 How to use?
 
 install npm package 
